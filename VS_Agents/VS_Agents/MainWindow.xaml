@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VS_Agents"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="7*"/>
-
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#FFF9969E" />
         <Image Grid.Row="0" Source="Resources/Попрыженок.png" HorizontalAlignment="Left" Margin="10,0,0,0" />
@@ -29,11 +28,13 @@
                 </Grid.ColumnDefinitions>
                 <ComboBox x:Name="ComboF" Grid.Column="0" Margin="10" SelectionChanged="ComboF_SelectionChanged"/>
                 <ComboBox x:Name="ComboType" Grid.Column="1" Margin="10" SelectionChanged="ComboType_SelectionChanged"/>
-                <TextBox x:Name="Searh" Grid.Column="2" Margin="10" Background="LightGray" TextChanged="Searh_TextChanged"/>
+                <TextBox x:Name="Searh" Grid.Column="2" Margin="10" Background="#43DCFE" TextChanged="Searh_TextChanged"/>
             </Grid>
             <Grid Grid.Row="2" >
-                <Button Content="Вперед" x:Name="BtnLeft" Margin="717,13,21,10" RenderTransformOrigin="0.314,0.341" Click="BtnLeft_Click"/>
-                <Button Content="Назад" x:Name="BtnRight"   Margin="662,13,80,10"/>
+                <Button Content="Вперед" x:Name="BtnLeft" Margin="717,13,21,10" RenderTransformOrigin="0.314,0.341" Click="BtnLeft_Click" Background="#43DCFE"/>
+                <Button Content="Назад" x:Name="BtnRight"   Margin="662,13,80,10" Click="BtnRight_Click" Background="#43DCFE"/>
+                <Button Content="Добавить" x:Name="BtnAdd" Margin="31,13,658,10" Click="BtnAdd_Click" Background="#43DCFE"/>
+                <Button Content="Редактировать" x:Name="BtnEdit" Margin="151,13,538,10" Click="BtnEdit_Click" Background="#43DCFE"/>
             </Grid>
 
 
@@ -62,8 +63,8 @@
                                 </Image.Source>
                             </Image>
                             <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
-                                <TextBlock Text="{Binding Type}"  Margin="10,0,0,0" FontSize="15"/>
-                                <TextBlock Text=" | " Margin="10,0,0,0" FontSize="15"/>
+                                <TextBlock Text="{Binding TypeAgent.Type_Agent}"  Margin="10,0,0,0" FontSize="15"/>
+                                <TextBlock Text=" | "  FontSize="15"/>
                                 <TextBlock Text="{Binding Name}" FontSize="15"/>
                             </StackPanel>
                             <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
@@ -72,6 +73,9 @@
                             <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
                                 <TextBlock Text="Приоритетность: " Margin="10,0,0,0" FontSize="15"/>
                                 <TextBlock Text="{Binding Priority}" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel  Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="15%" Margin="100,0,0,0" FontSize="20"/>
                             </StackPanel>
                         </Grid>
                     </DataTemplate>

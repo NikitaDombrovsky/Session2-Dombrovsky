@@ -65,11 +65,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddEditWindow.xaml.cs">
+      <DependentUpon>AddEditWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Agent.cs">
       <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AgentsPage.xaml.cs">
-      <DependentUpon>AgentsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="History_Agents.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -94,7 +94,7 @@
     <Compile Include="TypeProduct.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Page Include="AgentsPage.xaml">
+    <Page Include="AddEditWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

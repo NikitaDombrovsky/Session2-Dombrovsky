@@ -6,13 +6,11 @@ C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\bin\Debug\EntityFramework.
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\bin\Debug\EntityFramework.xml
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\bin\Debug\ru\EntityFramework.resources.dll
-C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\AgentsPage.g.cs
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\MainWindow.g.cs
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\App.g.cs
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents_Content.g.cs
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents_MarkupCompile.cache
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents_MarkupCompile.lref
-C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\AgentsPage.baml
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\MainWindow.baml
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents.g.resources
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents.Properties.Resources.resources
@@ -21,3 +19,6 @@ C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents.csproj
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents.csproj.CopyComplete
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents.exe
 C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents.pdb
+C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\VS_Agents.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\AddEditWindow.g.cs
+C:\Users\Administrator\Desktop\VS\VS_Agents\VS_Agents\obj\Debug\AddEditWindow.baml
