@@ -7,6 +7,76 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FFF9969E" />
+        <Image Grid.Row="0" Source="Resources/Попрыженок.png" HorizontalAlignment="Left" Margin="10,0,0,0" />
+        <!--<Frame x:Name="MainFrame" Grid.Row="1" />-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox x:Name="ComboF" Grid.Column="0" Margin="10" SelectionChanged="ComboF_SelectionChanged"/>
+                <ComboBox x:Name="ComboType" Grid.Column="1" Margin="10" SelectionChanged="ComboType_SelectionChanged"/>
+                <TextBox x:Name="Searh" Grid.Column="2" Margin="10" Background="LightGray" TextChanged="Searh_TextChanged"/>
+            </Grid>
+            <Grid Grid.Row="2" >
+                <Button Content="Вперед" x:Name="BtnLeft" Margin="717,13,21,10" RenderTransformOrigin="0.314,0.341" Click="BtnLeft_Click"/>
+                <Button Content="Назад" x:Name="BtnRight"   Margin="662,13,80,10"/>
+            </Grid>
+
+
+            <ListBox x:Name="lbMain" Grid.Row="1" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Width="100" Height="100">
+                                <Image.Source>
+                                    <Binding Path="Logo">
+                                        <Binding.TargetNullValue>
+                                            <ImageSource>/Resources/picture.png</ImageSource>
+                                        </Binding.TargetNullValue>
+                                    </Binding>
+                                </Image.Source>
+                            </Image>
+                            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+                                <TextBlock Text="{Binding Type}"  Margin="10,0,0,0" FontSize="15"/>
+                                <TextBlock Text=" | " Margin="10,0,0,0" FontSize="15"/>
+                                <TextBlock Text="{Binding Name}" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+                                <TextBlock Text="{Binding Phone}"  Margin="10,0,0,0" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                                <TextBlock Text="Приоритетность: " Margin="10,0,0,0" FontSize="15"/>
+                                <TextBlock Text="{Binding Priority}" FontSize="15"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
     </Grid>
 </Window>
